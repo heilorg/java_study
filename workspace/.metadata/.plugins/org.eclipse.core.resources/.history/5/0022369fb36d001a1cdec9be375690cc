@@ -1,0 +1,56 @@
+package vacation_assignment;
+
+import java.util.Scanner;
+
+public class assignment_3 {
+	// 과제 11 ~ 20
+	public static void assignment_21() {
+		int[] a = {1, 2, 3};
+		int[] b = {1, 2, 3};
+		
+		for(int i = 0; i < 3; i++) {
+			System.out.println("a[" + i + "] = " + a[i]);
+			System.out.println("b[" + i + "] = " + b[i]);
+		}
+		
+		String c;
+		Scanner scan = new Scanner(System.in);
+		
+		c = scan.nextLine();
+		System.out.println(c + "님 환영합니다.");
+	}
+	
+	public static void assignment_22() {
+		int i, j;
+		int[][] a = {{0, 1, 2, 3}, {4, 5, 6, 7}, {8 , 9, 10, 11}}; 
+		for(i = 0; i < 3; i++) {
+			for(j = 0; j < 4; j++) {
+				System.out.println(a[i][j]);
+			}
+		}
+	}
+	
+	public static void assignment_23() {
+		String blood;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("당신의 혈액형을 입력해 주세요");
+		blood = scan.nextLine();
+		
+		switch(blood) {
+			case "A":
+			case "a":
+			case "B":
+			case "b":
+			case "O":
+			case "o":
+			case "AB":
+			case "ab":
+				System.out.println("당신의 혈액형은 " + blood + "입니다.");
+				break;
+		}
+	}
+
+	public static void main(String[] args) {
+		assignment_22();
+	}
+}

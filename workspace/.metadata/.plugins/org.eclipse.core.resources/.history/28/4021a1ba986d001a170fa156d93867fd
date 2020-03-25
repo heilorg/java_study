@@ -1,0 +1,11 @@
+package vacation_assignment;
+
+public class assignment {
+	public static void main(String[] args) {
+		
+	}
+	
+	public void assignment_1() {
+		System.out.println("수원정보과학고등학교");
+	}
+}

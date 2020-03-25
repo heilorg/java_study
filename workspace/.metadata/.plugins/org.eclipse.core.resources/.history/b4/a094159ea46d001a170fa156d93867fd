@@ -1,0 +1,156 @@
+package vacation_assignment;
+
+import java.util.Scanner;
+
+public class assignment {
+	public static void main(String[] args) {
+		assignment_8();
+	}
+	
+	public static void assignment_1() {
+		System.out.println("수원정보과학고등학교");
+	}
+	
+	public static void assignment_2() {
+		int a;
+		String b;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("당신의 나이는 ? : ");
+		a = scan.nextInt();
+		
+		System.out.println("당신의 혈액형은 ? : ");
+		b = scan.next();
+		
+		System.out.println("당신의 ");
+		System.out.println("나이는 " + a + " 이고");
+		System.out.println("혈액형은 " + b + " 입니다.");
+	}
+	public static void assignment_3() {
+		int a;
+		String b;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("당신의 나이는 ? : ");
+		a = scan.nextInt();
+		
+		System.out.println("당신의 혈액형은 ? : ");
+		b = scan.next();
+		
+		System.out.println("당신의 ");
+		System.out.println("나이는 " + a + " 이고");
+		System.out.println("혈액형은 " + b + " 입니다.");
+		
+		if(b.equals("A")) {
+			System.out.println("소심하시네요");
+		}else if(b.equals("B")) {
+			System.out.println("이기적이시네요");
+		}else if(b.equals("O")) {
+			System.out.println("활발하시네요");
+		}else if(b.equals("AB")) {
+			System.out.println("AB형이시군요");
+		}else {
+			System.out.println("혈액형이 특이하시군요");
+		}
+	}
+	
+	public static void assignment_4() {
+		float a, b;
+		double k = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("당신의 키는 몇 cm 입니까?");
+		System.out.println("키 : ");
+		a = scan.nextFloat();
+		
+		System.out.println("당신의 몸무게는 몇 kg 입니까?");
+		System.out.println("몸무게 : ");
+		b = scan.nextFloat();
+		
+		k = b / ((a * 0.01) * (a * 0.01)); 
+		
+		System.out.println("당신의 BMI지수는 " + k + "입니다");
+		
+		if(k <= 18.5)
+			System.out.println("당신은 저체중입니다.");
+		else if(k <= 23)
+			System.out.println("당신은 정상입니다.");
+		else if(k <= 25)
+			System.out.println("당신은 과체중입니다.");
+		else if(k <= 30)
+			System.out.println("당신은 비만입니다.");
+		else
+			System.out.println("당신은 고도비만입니다.");
+	}
+	
+	public static void assignment_5() {
+		int a, b, i, max = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자를 비교해 가장 큰 수를 출력");
+		System.out.println("몇개의 숫자를 비교할까요?");
+		a = scan.nextInt();
+		System.out.println("각각의 숫자를 입력하세요");
+		
+		for(i = 0; i < a; i++) {
+			System.out.println("숫자 입력 : ");
+			b = scan.nextInt();
+			if(max < b)max = b;
+		}
+		
+		System.out.println("가장 큰 수는 " + max + "입니다.");
+	}
+	
+	public static void assignment_6() {
+		int a, b, i, min = 1000000;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자를 비교해 가장 작은 수를 출력");
+		System.out.println("몇개의 숫자를 비교할까요?");
+		a = scan.nextInt();
+		System.out.println("각각의 숫자를 입력하세요");
+		
+		for(i = 0; i < a; i++) {
+			System.out.println("숫자 입력 : ");
+			b = scan.nextInt();
+			if(min > b)min = b;
+		}
+		
+		System.out.println("가장 작은 수는 " + min + "입니다.");
+	}
+	
+	public static void assignment_7() {
+		int i = 0, sum = 0;
+		
+		System.out.println("1부터 100까지 더하는 프로그램입니다.");
+		System.out.println("1부터 100까지 더하는 과정");
+		
+		for(i = 1; i <= 100; i++) {
+			sum += i;
+			System.out.println("1부터 " + i + "까지 더한 결과는" + sum + "입니다.");
+		}
+		
+		System.out.println("1부터 100까지 합은" + sum + "입니다.");
+		System.out.println("끝!!!");
+	}
+	
+	public static void assignment_8() {
+		int a, b, i, sum = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("원하는 수의 범위 안에 속하는 자연수를 모두 합하는 프로그램입니다.");
+		System.out.println("※주의※ 시작 수는 끝 수보다 무조건 작아야 합니다. (시작 수 < 끝 수)");
+		System.out.println("시작 수 입력 : ");
+		a = scan.nextInt();
+		System.out.println("끝 수 입력 : ");
+		b = scan.nextInt();
+		
+		for(i = a; i <= b; i++) {
+			sum += i;
+			System.out.println(a + "부터 " + i + "까지 더한 결과는" + sum + "입니다.");
+		}
+		
+		System.out.println(a + "부터 " + b + "까지 합은" + sum + "입니다.");
+		System.out.println("끝!!!");
+	}
+}

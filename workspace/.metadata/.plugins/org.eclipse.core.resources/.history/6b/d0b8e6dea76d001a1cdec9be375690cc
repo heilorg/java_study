@@ -1,0 +1,9 @@
+package vacation_assignment;
+
+public class assignment_2 {
+	// °úÁ¦ 11 ~ 20
+
+	public static void main(String[] args) {
+		assignment_10();
+	}
+}

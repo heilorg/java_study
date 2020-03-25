@@ -1,0 +1,29 @@
+package vacation_assignment;
+
+import java.util.Scanner;
+
+public class assignment {
+	public static void main(String[] args) {
+		this.assignment_1();
+	}
+	
+	public void assignment_1() {
+		System.out.println("수원정보과학고등학교");
+	}
+	
+//	public void assignment_2() {
+//		int a;
+//		char b;
+//		Scanner scan = new Scanner(System.in);
+//		
+//		System.out.println("당신의 나이는 ? : ");
+//		a = scan.nextInt();
+//		
+//		System.out.println("당신의 혈액형은 ? : ");
+//		b = scan.nextLine();
+//		
+//		System.out.println("당신의 ");
+//		System.out.println("나이는 %d 이고", a);
+//		System.out.println("혈액형은 %c 입니다.", b);
+//	}
+}

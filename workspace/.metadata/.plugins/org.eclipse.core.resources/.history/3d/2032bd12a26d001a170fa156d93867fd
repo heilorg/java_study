@@ -1,0 +1,73 @@
+package vacation_assignment;
+
+import java.util.Scanner;
+
+public class assignment {
+	public static void main(String[] args) {
+		assignment_3();
+	}
+	
+	public static void assignment_1() {
+		System.out.println("수원정보과학고등학교");
+	}
+	
+	public static void assignment_2() {
+		int a;
+		String b;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("당신의 나이는 ? : ");
+		a = scan.nextInt();
+		
+		System.out.println("당신의 혈액형은 ? : ");
+		b = scan.next();
+		
+		System.out.println("당신의 ");
+		System.out.println("나이는 " + a + " 이고");
+		System.out.println("혈액형은 " + b + " 입니다.");
+	}
+	public static void assignment_3() {
+		int a;
+		String b;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("당신의 나이는 ? : ");
+		a = scan.nextInt();
+		
+		System.out.println("당신의 혈액형은 ? : ");
+		b = scan.next();
+		
+		System.out.println("당신의 ");
+		System.out.println("나이는 " + a + " 이고");
+		System.out.println("혈액형은 " + b + " 입니다.");
+		
+		if(b.equals("A")) {
+			System.out.println("소심하시네요");
+		}else if(b.equals("B")) {
+			System.out.println("이기적이시네요");
+		}else if(b.equals("O")) {
+			System.out.println("활발하시네요");
+		}else if(b.equals("AB")) {
+			System.out.println("AB형이시군요");
+		}else {
+			System.out.println("혈액형이 특이하시군요");
+		}
+	}
+	
+	public static void assignment_4() {
+		float a, b, k = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("당신의 키는 몇 cm 입니까?");
+		System.out.println("키 : ");
+		a = scan.nextFloat();
+		
+		System.out.println("당신의 몸무게는 몇 kg 입니까?");
+		System.out.println("몸무게 : ");
+		a = scan.nextFloat();
+		
+		k = b / ((a * 0.01) * (a * 0.01)); 
+		
+		
+	}
+}
